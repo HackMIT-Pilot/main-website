@@ -1,0 +1,245 @@
+@import '_settings'
+@import '_fonts'
+
+blue = #4f7ee9
+bordersize = 2px
+borderdist = -10px
+sfont = Arvo
+ssfont = Avenir
+maxwidth = 1200px
+normalize()
+base()
+
+body
+    background blue
+    color white
+    font-family ssfont
+    font-weight 200
+    font-size 22px
+    line-height 1.4
+
+a
+    text-decoration none
+
+    &:hover
+        border-bottom 1px solid blue
+
+#wrapper
+    position relative
+    max-width 1100px
+    margin 0px auto
+
+
+.image-bg
+    width 200%
+    height 200%
+    position absolute
+    top -50%
+    left -50%
+
+    img
+        min-width 50%
+        min-height 50%
+        position absolute
+        top 25%
+        left 25%
+
+p
+    margin 19px 0
+
+h1,h2,h3,h4,h5,h6
+    font-weight normal
+h1
+    font-family: sfont
+    font-size: 120px;
+    margin-top 0
+    margin-bottom: 0
+
+h2
+    font-family: ssfont
+    font-weight 200
+    font-size: 56px
+    margin .5em 0
+    
+
+h3
+    font-family: ssfont 
+    font-weight 200
+    font-size: 34px
+    margin-top: 0
+
+h4
+    font-family sfont
+    font-size 40px
+    margin .5em 0
+    text-transform uppercase
+
+.section
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
+    width 100%
+    overflow hidden
+    position relative
+    padding 20px 0px 35px 0px
+    box-sizing border-box
+
+    a
+        color white
+
+    &.white
+        background white
+        color #444
+
+        a
+            color blue
+
+    &.dark
+        background #333
+        color white
+        a
+            color blue
+
+    &.sponsors
+        img
+            opacity 0.5
+            height 40px
+            margin-right 40px
+
+
+.wrap, header 
+    max-width maxwidth
+    margin 0px auto
+
+.content
+    max-width 900px
+
+
+.upper
+    text-transform uppercase
+
+.small
+    font-family ssfont
+    font-size 18px
+
+
+.button
+    background white
+    font-family ssfont
+    font-weight 500
+    font-size 29px
+    color blue
+    padding 20px 23px 19px 23px
+    text-transform uppercase
+    display inline-block
+    margin-right 25px
+    text-decoration none
+    background linear-gradient(#fff, #ddd)
+    border 1px solid white
+
+    &:hover
+        border 1px solid #fff
+
+    &.register
+        margin-top 20px
+        margin-bottom 40px
+        color blue
+        padding 30px 46px 26px 43px
+        font-size 46px
+
+    &.small
+        padding 0
+        background transparent
+        font-family ssfont
+        font-size 18px
+        position relative
+        bottom 3px
+        border 0px
+
+        &:hover
+            border-bottom 1px solid white
+
+#google
+    margin-top 40px
+    text-align center
+    opacity 0.5
+    text-transform uppercase
+    img
+        width 186px
+        margin-top -10px
+        opacity 0.8
+
+.wrap
+    padding 0 50px
+    box-sizing border-box
+
+.leader
+    line-height 1
+    text-align center
+    background url(../img/dome_transparent.png)
+    background-size 100% auto
+
+    h2
+        font-size 54px
+
+    h3
+        margin-top -20px
+        line-height 1.4
+
+
+header
+    box-sizing border-box
+    margin-top 90px
+    font-size 1.4em
+    width 100%
+    text-align center
+    position relative
+    clearfix()
+
+
+nav
+    padding 0
+    margin 0
+    z-index 1
+    position fixed
+    top 0
+    left 0
+    width 100%
+    background #333
+
+    a
+        margin 0 2px
+        display inline-block
+        padding 15px 14px
+        color white
+        font-size 24px
+        font-family ssfont
+        font-weight 500
+        &:hover
+            background darken(blue, 10%)
+            border 0
+
+        &.right
+            float right
+            background #fff
+            padding-left 30px
+            padding-right 30px
+            color darken(blue, 30%)
+            font-weight bold
+
+footer
+    p
+        display block
+    .four
+        column(4)
+        margin-left 0
+        padding-left 0
+
+        h4
+            font-size 18px
+
+    .break
+        clearfix()
+
+
+@import '_mq'
