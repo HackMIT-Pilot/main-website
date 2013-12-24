@@ -3,87 +3,34 @@ html
     head
         meta(charset='utf8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-        meta(name='description', content='description of your site')
-        meta(name='author', content= "author of the site")
+        meta(name='description', content='Blueprint is an exciting 12-hour hackathon for Boston-area high school students of all skill levels.')
+        meta(name='author', content= "HackMIT Blueprint Team")
         <meta name="viewport" content="width=device-width, user-scalable=false, initial-scale=1, maximum-scale=1">
 
         title
-            | Pilot + hackMIT
+            | Blueprint: Architect your world
 
-        link(rel='stylesheet', href='css/master.css')
+        link(rel='stylesheet', href='/css/master.css')
+        link(rel='stylesheet', href='/css/form.css')
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css')
     body
         nav
             .wrap
-                a(href="#") Home
-                a(href="#") Logistics
-                a(href="#") FAQ
-                a(href="#").right Register
+                a(href="/") Home
+                a(href="/logistics") Logistics
+                a(href="/faq") FAQ
+                a(href="/register").right Register
 
-        .section.leader
-            .wrap
-                header
-                    span#first HackMIT presents:
-                    h1 Blueprint
-                    span#pilot A <a href="#">Pilot</a> event
-
-                h2 Start your engines.<br>February 22, 2014.
-                a(class='button register', href='#') <i class="fa fa-rocket"></i> Register
-
-                h3#google hosted at<br>
-                    img(src="/img/sponsors/google.png")
-                    <br><span>Cambridge</span>
-
-        .section.white
-            .wrap
-                h2 Ever wish someone had made the next big thing? What if you could build it? A hackathon is the place to make your dreams come true.
-
-        .section.dark.sponsors
-            .wrap
-                h2 Sponsors
-                img(src="/img/sponsors/mitadmissions.png")
-                img(src="/img/sponsors/techx.png")
-
-                h5 Interested in sponsoring? Let us know at pilot@hackmit.org.
-
-        .section.white
-            .wrap
-                h2 Ready to change the world?
-                a(class='button register', href='#') Register
-                h3 Questions? Look at our FAQ! You can also ask us on Twitter, Facebook, or via email at pilot@hackmit.org.
+        != content
 
         footer.section
             .wrap.dark
-                p Organized by TechX HackMIT, an MIT student organization.
+                p Organized by TechX HackMIT, an MIT student organization. <br> Contact us at <a href="mailto:blueprint@hackmit.org">blueprint@hackmit.org</a> or via <a href="#">Twitter</a> or <a href="#">Facebook</a>.
                 .four
-                    h4 For students
-                    ul
-                        li
-                            a(href='#') Logistics
-                        li
-                            a(href='#') FAQ
-                        li
-                            a(href='#') Student Info
-                        li
-                            a(href='#') Registration
                 .four
-                    h4 For parents / teachers
-                    ul
-                        li
-                            a(href='#') Goals
-                        li
-                            a(href='#') FAQ
-                        li
-                            a(href='#') Safety
-                        li
-                            a(href='#') Transport
+                    h4 <a href="#">For parents / teachers</a>
                 .four
-                    h4 For volunteers
-                    ul
-                        li
-                            a(href='#') Mentors
-                        li
-                            a(href='#') Volunteers
+                    h4 <a href="#">For volunteers</a>
                 .break
                 .social Social media goes here.
 
