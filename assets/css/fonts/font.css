@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Arvo';
+  src: url('Arvo-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Arvo-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Arvo-Regular.woff') format('woff'), /* Modern Browsers */
+       url('Arvo-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Arvo-Regular.svg#791db79240aa4bf477bca43b22760b8e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Whitney HTF Book';
+  src: url('WhitneyHTF-Book.eot'); /* IE9 Compat Modes */
+  src: url('WhitneyHTF-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('WhitneyHTF-Book.woff') format('woff'), /* Modern Browsers */
+       url('WhitneyHTF-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('WhitneyHTF-Book.svg#dc62c73a8bb515c3b7f9c25c18584c8e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Whitney HTF Light';
+  src: url('WhitneyHTF-Light.eot'); /* IE9 Compat Modes */
+  src: url('WhitneyHTF-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('WhitneyHTF-Light.woff') format('woff'), /* Modern Browsers */
+       url('WhitneyHTF-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('WhitneyHTF-Light.svg#19ec0d586b1ec280cab9755b8e0ff018') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+

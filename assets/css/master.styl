@@ -4,8 +4,8 @@ blue = #4f7ee9
 orange = darken(blue, 30%)
 bordersize = 2px
 borderdist = -10px
-sfont = Arvo
-ssfont = "Whitney HTF"
+sfont = Arvo, Tahoma, serif
+ssfont = "Whitney HTF", "Whitney HTF Book", sans-serif
 maxwidth = 1200px
 normalize()
 base()
@@ -58,6 +58,9 @@ h1
     margin-top 0
     margin-bottom: 0
 
+    &.sans
+        font-family: ssfont
+
 h2
     font-family: ssfont
     font-weight 200
@@ -68,7 +71,7 @@ h2
 h3
     font-family: ssfont 
     font-weight 200
-    font-size: 34px
+    font-size: 30px
     margin-top: 0
 
 h4
@@ -114,20 +117,23 @@ h5
             height 40px
             margin-right 40px
 
-        .wrap div
-            height 100px
+        #sponsorlogo
+            a
+                margin 10px 30px
+                display inline-block
+                line-height 75px
 
-        #mitadmissions
-            background url(../img/sponsors/mitadmissions.png)
-            height 35px
-            margin 20px
-            width 331px
+                img
+                    max-height 32px
+                    width auto
+                    padding 10px 0
+                    -webkit-filter: grayscale(100%)
+                    -ms-filter: grayscale(100%)
+                    -o-filter: grayscale(100%)
+                    opacity 1.0
 
-        #techx
-            background url(../img/sponsors/techx.png)
-            height 70px
-            width 180px
-            margin 10px
+                &:hover
+                    text-decoration none
 
 #first
     margin-left -300px
@@ -193,7 +199,7 @@ h5
             border-bottom 1px solid white
 
 #google
-    margin-top 40px
+    margin-top 28px
     text-align center
     opacity 0.7
     line-height 0.3em
