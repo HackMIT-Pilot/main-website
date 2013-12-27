@@ -4,12 +4,12 @@
 			h1.sans Register
 
 .section.white.register
-	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/w3zcfz20ifxgk2/#public")
+	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="http://holachek.scripts.mit.edu/blueprint.php", novalidate)
 		section#personalinfo
 			h3 Personal Info
 
 			label(id="label_name", for="name") Name
-			input(id="name", name="name", type="text", class="medium", spellcheck="false", tabindex="1", required)
+			input(id="name", name="name", type="text", class="medium", spellcheck="false", required)
 			
 			label(id="label_age", for="age") Age
 			input(id="age", name="age", type="number", min="14", max="23", step="1", class="small", spellcheck="false", placeholder="16")
@@ -38,7 +38,12 @@
 				option(value="Unisex S") Unisex S
 				option(value="Unisex M" selected) Unisex M
 				option(value="Unisex L") Unisex L
-				option(value="Unisex XL") Unisex L
+				option(value="Unisex XL") Unisex XL
+				option(value="Woman&#8217;s XS") Woman&#8217;s XS
+				option(value="Woman&#8217;s S") Woman&#8217;s S
+				option(value="Woman&#8217;s M") Woman&#8217;s M
+				option(value="Woman&#8217;s L") Woman&#8217;s L
+				option(value="Woman&#8217;s XL") Woman&#8217;s XL
 
 			span Enter your <a href="http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts" target="_blank">American Apparel</a> T-shirt size
 
@@ -93,10 +98,10 @@
 
 		section#shortanswer
 			h3 Short Question
-			p In order for us to make this the best high school hackathon ever, we need to make sure our mentors can help you learn what you want to learn! Please write a short answer.
+			p In order for us to make this the best high school hackathon ever, we need to make sure our mentors can help you learn what you want to learn! It's okay if you don't know yet!
 
 			label(id="label_why", for="why") What do you want to learn/create at Blueprint?<br>(100 words or less)
-			textarea(id="why", placeholder="e.g., I want to build a basic tetris game with Python", spellcheck="true", required)
+			textarea(id="why", placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true", required)
 
 			.clear
 			
@@ -143,6 +148,8 @@
 		section#submit
 			h3 Submit
 			p You made it! Press the button below to register.
+
+			input(id="altemail", name="altemail", type="text")
 
 			input(id="saveform", name="saveform", type="submit", value="Submit and Register!")
 
