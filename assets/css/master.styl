@@ -2,6 +2,8 @@
 
 blue = #4f7ee9
 orange = darken(blue, 30%)
+bluegreen = #76A8A9
+yellow = #FFCF69
 bordersize = 2px
 borderdist = -10px
 sfont = Arvo, Tahoma, serif
@@ -230,6 +232,8 @@ h5
         margin-top -20px
         line-height 1.4
 
+.white.register
+    text-align left
 
 header
     box-sizing border-box
@@ -297,5 +301,88 @@ footer
     .break
         clearfix()
 
+
+// form
+h3
+    border-top: 1px dotted #ddd
+    padding-top: 10px
+
+.clear
+    clear: both
+    margin-bottom: 50px
+
+.register
+    label
+        font-weight bold
+        width: 170px
+        line-height: 1.0em
+        margin-right: 10px
+    span
+        width: 70%
+        margin-left: 180px
+        line-height: 1.0em
+        font-style: italic
+        margin-bottom: 42px
+        margin-top: -20px
+    label, span
+        display: inline-block
+        float: left
+        clear: left
+        margin-top: 10px
+    input, select, textarea
+        display: inline-block
+        float: left
+        margin-top: 5px
+        margin-bottom: 7px
+        font-size: 22px
+        padding: 3px 4px
+
+    select
+        border-color #999
+
+    span#laptop
+        margin-top: -15px
+
+#otherdietary
+    display: none
+    margin-left: 10px
+
+#skills
+    clear: both
+    display: block
+    margin-left: 170px
+
+    .skill
+        float: left
+
+        label, input
+            font-weight: normal
+
+        label
+            margin-top: -18px
+            margin-left: 20px
+
+#shortanswer
+    label
+        width: 280px
+    textarea
+        width: 60%
+        height: 150px
+
+#parentcontact
+    label
+        width: 280px
+    input
+
+
+#safety
+    #safetywaiver
+        font-size: 18px
+        border: 1px solid #ddd
+        padding: 10px
+        height: 400px
+        overflow-y: scroll
+        h4
+            font-size: 24px
 
 @import '_mq'
