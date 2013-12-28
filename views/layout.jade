@@ -4,11 +4,11 @@ html
         meta(charset='utf8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
         meta(name='description', content='Blueprint is an exciting 12-hour hackathon for Boston-area high school students of all skill levels.')
-        meta(name='author', content= "Blueprint")
+        meta(name='author', content= "HackMIT presents: Blueprint")
         <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
 
         title
-            | Blueprint: Architect your world
+            | HackMIT presents: Blueprint
 
         link(rel='stylesheet', href='/css/fonts/font.css')
         link(rel='stylesheet', href='/css/master.css')
@@ -17,7 +17,8 @@ html
         nav
             .wrap
                 a(href="/") Home
-                a(href="/logistics") Logistics
+                //
+                    a(href="/logistics") Logistics
                 a(href="/faq") FAQ
                 a(href="/register").right <i class="fa fa-rocket"></i> Register
 
@@ -25,20 +26,20 @@ html
 
         footer.section
             .wrap.dark
-                p Organized by TechX HackMIT, an MIT student organization. <br> Contact us at <a href="mailto:blueprint@hackmit.org">blueprint@hackmit.org</a> or via <a href="#">Twitter</a> or <a href="#">Facebook</a>.
+                p Organized by TechX HackMIT, an MIT student organization. <br> Contact us at <a href="mailto:blueprint@hackmit.org">blueprint@hackmit.org</a> or via <a href="https://twitter.com/MITBlueprint">Twitter</a> or <a href="https://www.facebook.com/mitblueprint">Facebook</a>.
                 .four
                 .four
                     h4 <a href="#">For parents / teachers &raquo;</a>
                 .four
                     h4 <a href="#">For mentors &raquo;</a>
                 .break
-                .social <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a>
-
 
 
         script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js")
         script(src="/js/jquery.formatter.js")
-        script(src="/js/main.js")        
+        script(src="/js/main.js") 
+
+        include google_analytics.html 
 
         //- this must be included for live reload to work in developement
         //- it will be automatically ignored when deployed

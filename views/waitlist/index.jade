@@ -1,7 +1,7 @@
 .section
 	.wrap
 		header
-			h1.sans Register
+			h1.sans Register for Waitlist
 
 .section.white.register
 	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/xena3z90w50m1s/#public")
@@ -106,7 +106,7 @@
 			p In order for us to make this the best high school hackathon ever, we need to make sure our mentors can help you learn what you want to learn! It's okay if you don't know yet!
 
 			label(id="label_why", for="Field13") What do you want to learn/create at Blueprint?<br>(100 words or less)
-			textarea(id="why", name="Field13" placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true")
+			textarea(id="why", name="Field13" placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true", required)
 
 			.clear
 			
@@ -152,7 +152,7 @@
 
 		section#submit
 			h3 Submit
-			p You made it! Press the button below to register.
+			p You made it! Press the button below to register for our waitlist.
 
 			input(id="saveform", name="saveForm", type="submit", value="Submit and Register!")
 

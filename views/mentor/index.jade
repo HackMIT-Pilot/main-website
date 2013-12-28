@@ -1,7 +1,7 @@
 .section
 	.wrap
 		header
-			h1.sans Register
+			h1.sans Mentor
 
 .section.white.register
 	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/xena3z90w50m1s/#public")
@@ -16,21 +16,12 @@
 				option(value="None" checked)
 				option(value="Male") Male
 				option(value="Female") Female
-				option(value="NoAnswer") Prefer Not to Answer
 			
 			label(id="label_email", for="Field18") Email
 			input(id="email", name="Field18", type="email", class="medium", spellcheck="false", required)
 
 			label(id="label_cellphone", for="Field4") Cell Phone
 			input(id="cellphone", name="Field4", type="tel", class="medium", spellcheck="false", class="phone", required)
-			span If you don't have a cell phone, enter any number we can reach you at during the day.		
-
-			label(id="label_highschool", for="Field5") High School
-			input(id="highschool", name="Field5", type="text", class="medium", spellcheck="false", required)
-
-			label(id="label_grade", for="Field7") Grade
-			input(id="grade", name="Field7", type="number", min="9", max="12", step="1", class="small", spellcheck="false", placeholder="9")
-			span Enter a grade between 9&ndash;12.<br>If you aren't in high school, <a href="mailto:blueprint@hackmit.org">contact us</a>.
 
 			.clear
 
@@ -65,39 +56,27 @@
 			input(id="otherdietary", name="Field10", type="text", class="medium", spellcheck="false", placeholder="Specify other restrictions")
 			span Please let us know how we can ensure you eat well!
 
-			label(id="label_laptop", for="Field11") Will you be bringing a laptop?
-			select(id="laptop", name="Field11")
-				option(value="yes" selected) Yes
-				option(value="no") No
-			span#laptop We would appriciate it if you could bring a laptop from home.<br>If not, we'll do our best to set you up.
-
-			//
-				label(id="label_skills", for="skills") I have experience with:
-				#skills
-					.skill
-						input(id="skills-java", type="checkbox", value="Java")
-						label(for="skills-java") Java
-					.skill
-						input(id="skills-python", type="checkbox", value="Python")
-						label(for="skills-python") Python
-					.skill
-						input(id="skills-c", type="checkbox", value="C")
-						label(for="skills-c") C/C++
-					.skill
-						input(id="skills-html", type="checkbox", value="HTML/CSS")
-						label(for="skills-html") HTML/CSS
-					.skill
-						input(id="skills-js", type="checkbox", value="Javascript")
-						label(for="skills-js") Javascript
-					.skill
-						input(id="skills-impromptu", type="checkbox", value="Impromptu Jokes")
-						label(for="skills-impromptu") Impromptu Jokes
-				span Just for helping calibrate our presentations. Totally okay if you don't know any of these things!
-
-			label(id="label_team", for="Field12") Do you already have a team?
-			select(id="team", name="Field12")
-				option(value="no" selected) Nope, help me find one!
-				option(value="yes") Yes, I already have a team in mind.
+			label(id="label_skills", for="skills") I have experience with:
+			#skills
+				.skill
+					input(id="skills-java", type="checkbox", value="Java")
+					label(for="skills-java") Java
+				.skill
+					input(id="skills-python", type="checkbox", value="Python")
+					label(for="skills-python") Python
+				.skill
+					input(id="skills-c", type="checkbox", value="C")
+					label(for="skills-c") C/C++
+				.skill
+					input(id="skills-html", type="checkbox", value="HTML/CSS")
+					label(for="skills-html") HTML/CSS
+				.skill
+					input(id="skills-js", type="checkbox", value="Javascript")
+					label(for="skills-js") Javascript
+				.skill
+					input(id="skills-impromptu", type="checkbox", value="Impromptu Jokes")
+					label(for="skills-impromptu") Impromptu Jokes
+			span Just for helping calibrate our presentations. Totally okay if you don't know any of these things!
 
 			.clear
 
@@ -106,26 +85,12 @@
 			p In order for us to make this the best high school hackathon ever, we need to make sure our mentors can help you learn what you want to learn! It's okay if you don't know yet!
 
 			label(id="label_why", for="Field13") What do you want to learn/create at Blueprint?<br>(100 words or less)
-			textarea(id="why", name="Field13" placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true")
-
-			.clear
-			
-		section#parentcontact
-			h3 Parent/Guardian Info
-
-			label(id="label_parentname", for="Field14") Parent/Guardian Name
-			input(id="parentname", name="Field14", spellcheck="false", type="text", required)
-
-			label(id="label_parentphone", for="Field15") Parent/Guardian Phone
-			input(id="parentphone", name="Field15", spellcheck="false", type="tel", class="phone", required)
-
-			label(id="label_parentemail", for="Field16") Parent/Guardian Email
-			input(id="parentemail", name="Field16", spellcheck="false", type="email", required)
+			textarea(id="why", name="Field13" placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true", required)
 
 			.clear
 
 		section#safety
-			h3 Legal Waiver
+			h3 Legal Waivers
 
 			#safetywaiver
 				h4 Blueprint Important Safety Policies and Media Release
@@ -147,6 +112,22 @@
 					p In summary, don’t bring any weapons or anything illegal. Be respectful to yourself, other attendees, and event staff. If we lend you a laptop, we expect it will be returned in the condition it was lended out to you. You give us the right to use your picture in our marketing materials. Also, if you are a minor, make sure you parent or guardian has given you permission to attend.
 
 				p With that out of the way, we know you’ll have a fantastic time at Blueprint! We can’t wait!
+
+			#mentorwaiver
+				h4 Blueprint Mentor Policies
+				p Revision 1; revised Dec 28, 2013
+
+				p TechX HackMIT (an MIT student organization) presents Blueprint, a 12-hour Pilot event where high school students work together in teams to design, build, and pitch their own apps and websites. Blueprint aims provide a <strong>safe and welcoming environment for all students</strong> and their creative ideas. We need to ensure we can maintain a positive atmosphere so you can focus on learning and inspiring others.
+
+				p In the following policies, “I” and “you” is defined as the high school student attendee registering this application. “Your parent/guardian” refers to the parent or legal guardian of the high school student attendee. <strong>By clicking "Submit" below, you and your parent/guardian agree to the following</strong>:
+
+				ul
+					li I will <strong>not bring weapons of any kind to Blueprint</strong>. Firearms, knives, and other weapons are banned. If you can't bring it on an airplane, don't bring it here!
+					li I will <strong>not bring anything illegal</strong> to Blueprint.
+					li I will conduct myself in a manner respectful to others. If I don’t, I understand I may be asked to leave before the event is finished.
+					li If I borrow a laptop from Blueprint, I will never leave it unattended, and will return it in good condition.
+					li I hereby <strong>grant permission to Blueprint and its staff to photograph or record my image, likeness, or depiction</strong> for use in promotional and press materials.
+					li I agree that if I am under age 18, I have reviewed this document with my parent/guardian and they agree to the conditions herein on my behalf.
 
 			.clear
 
