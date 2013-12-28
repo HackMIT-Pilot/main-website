@@ -11,8 +11,12 @@
 			label(id="label_name", for="Field1") Name
 			input(id="name", name="Field1", type="text", class="medium", spellcheck="false", required)
 			
-			label(id="label_age", for="Field2") Age
-			input(id="age", name="Field2", type="number", min="14", max="23", step="1", class="small", spellcheck="false", placeholder="16")
+			label(id="label_gender", for="Field20", class="selectlabel") Gender
+			select(id="gender", name="Field20")
+				option(value="None" checked)
+				option(value="Male") Male
+				option(value="Female") Female
+				option(value="NoAnswer") Prefer Not to Answer
 			
 			label(id="label_email", for="Field18") Email
 			input(id="email", name="Field18", type="email", class="medium", spellcheck="false", required)
