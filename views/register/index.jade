@@ -1,30 +1,31 @@
-.section.leader
+.section
 	.wrap
 		header
 			h1.sans Register
 
 .section.white.register
-	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="http://holachek.scripts.mit.edu/blueprint.php", novalidate)
+	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/xena3z90w50m1s/#public")
 		section#personalinfo
 			h3 Personal Info
 
-			label(id="label_name", for="name") Name
-			input(id="name", name="name", type="text", class="medium", spellcheck="false", required)
+			label(id="label_name", for="Field1") Name
+			input(id="name", name="Field1", type="text", class="medium", spellcheck="false", required)
 			
-			label(id="label_age", for="age") Age
-			input(id="age", name="age", type="number", min="14", max="23", step="1", class="small", spellcheck="false", placeholder="16")
+			label(id="label_age", for="Field2") Age
+			input(id="age", name="Field2", type="number", min="14", max="23", step="1", class="small", spellcheck="false", placeholder="16")
 			
-			label(id="label_email", for="email") Email
-			input(id="email", name="email", type="email", class="medium", spellcheck="false", required)
+			label(id="label_email", for="Field18") Email
+			input(id="email", name="Field18", type="email", class="medium", spellcheck="false", required)
 
-			label(id="label_cellphone", for="cellphone") Cell Phone
-			input(id="cellphone", name="cellphone", type="tel", class="medium", spellcheck="false", class="phone", required)			
+			label(id="label_cellphone", for="Field4") Cell Phone
+			input(id="cellphone", name="Field4", type="tel", class="medium", spellcheck="false", class="phone", required)
+			span If you don't have a cell phone, enter any number we can reach you at during the day.		
 
-			label(id="label_highschool", for="highschool") High School
-			input(id="highschool", name="highschool", type="text", class="medium", spellcheck="false", required)
+			label(id="label_highschool", for="Field5") High School
+			input(id="highschool", name="Field5", type="text", class="medium", spellcheck="false", required)
 
-			label(id="label_grade", for="grade") Grade
-			input(id="grade", name="grade", type="number", min="9", max="12", step="1", class="small", spellcheck="false", placeholder="9")
+			label(id="label_grade", for="Field7") Grade
+			input(id="grade", name="Field7", type="number", min="9", max="12", step="1", class="small", spellcheck="false", placeholder="9")
 			span Enter a grade between 9&ndash;12.<br>If you aren't in high school, <a href="mailto:blueprint@hackmit.org">contact us</a>.
 
 			.clear
@@ -32,8 +33,8 @@
 		section#eventlogistics
 			h3 Event Logistics
 
-			label(id="label_tshirt", for="tshirt") T-shirt Size
-			select(id="tshirt", name="tshirt")
+			label(id="label_tshirt", for="Field8") T-shirt Size
+			select(id="tshirt", name="Field8")
 				option(value="Unisex XS") Unisex XS
 				option(value="Unisex S") Unisex S
 				option(value="Unisex M" selected) Unisex M
@@ -47,8 +48,8 @@
 
 			span Enter your <a href="http://www.americanapparel.net/sizing/default.asp?chart=mu.shirts" target="_blank">American Apparel</a> T-shirt size
 
-			label(id="label_dietary", for="dietary") Dietary Restrictions
-			select(id="dietary", name="dietary")
+			label(id="label_dietary", for="Field9") Dietary Restrictions
+			select(id="dietary", name="Field9")
 				option(value="none" selected) None
 				option(value="vegetarian") Vegetarian
 				option(value="vegan") Vegan
@@ -57,11 +58,11 @@
 				option(value="kosher") Kosher
 				option(value="halal") Halal
 				option(value="other") Other
-			input(id="otherdietary", name="otherdietary", type="text", class="medium", spellcheck="false", placeholder="Specify other restrictions")
+			input(id="otherdietary", name="Field10", type="text", class="medium", spellcheck="false", placeholder="Specify other restrictions")
 			span Please let us know how we can ensure you eat well!
 
-			label(id="label_laptop", for="laptop") Will you be bringing a laptop?
-			select(id="laptop", name="laptop")
+			label(id="label_laptop", for="Field11") Will you be bringing a laptop?
+			select(id="laptop", name="Field11")
 				option(value="yes" selected) Yes
 				option(value="no") No
 			span#laptop We would appriciate it if you could bring a laptop from home.<br>If not, we'll do our best to set you up.
@@ -89,8 +90,8 @@
 						label(for="skills-impromptu") Impromptu Jokes
 				span Just for helping calibrate our presentations. Totally okay if you don't know any of these things!
 
-			label(id="label_team", for="team") Do you already have a team?
-			select(id="team", name="team")
+			label(id="label_team", for="Field12") Do you already have a team?
+			select(id="team", name="Field12")
 				option(value="no" selected) Nope, help me find one!
 				option(value="yes") Yes, I already have a team in mind.
 
@@ -100,22 +101,22 @@
 			h3 Short Question
 			p In order for us to make this the best high school hackathon ever, we need to make sure our mentors can help you learn what you want to learn! It's okay if you don't know yet!
 
-			label(id="label_why", for="why") What do you want to learn/create at Blueprint?<br>(100 words or less)
-			textarea(id="why", placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true", required)
+			label(id="label_why", for="Field13") What do you want to learn/create at Blueprint?<br>(100 words or less)
+			textarea(id="why", name="Field13" placeholder="e.g., I really want to learn how to make an iPhone app! (Feel free to be as specific or vague as you want. We'll have a brainstorming session at the event to help)", spellcheck="true", required)
 
 			.clear
 			
 		section#parentcontact
 			h3 Parent/Guardian Info
 
-			label(id="label_parentname", for="parentname") Parent/Guardian Name
-			input(id="parentname", name="parentname", spellcheck="false", type="text", required)
+			label(id="label_parentname", for="Field14") Parent/Guardian Name
+			input(id="parentname", name="Field14", spellcheck="false", type="text", required)
 
-			label(id="label_parentphone", for="parentphone") Parent/Guardian Phone
-			input(id="parentphone", name="parentphone", spellcheck="false", type="tel", class="phone", required)
+			label(id="label_parentphone", for="Field15") Parent/Guardian Phone
+			input(id="parentphone", name="Field15", spellcheck="false", type="tel", class="phone", required)
 
-			label(id="label_parentemail", for="parentemail") Parent/Guardian Email
-			input(id="parentemail", name="parentemail", spellcheck="false", type="email", required)
+			label(id="label_parentemail", for="Field16") Parent/Guardian Email
+			input(id="parentemail", name="Field16", spellcheck="false", type="email", required)
 
 			.clear
 
@@ -149,11 +150,9 @@
 			h3 Submit
 			p You made it! Press the button below to register.
 
-			input(id="altemail", name="altemail", type="text")
-
-			input(id="saveform", name="saveform", type="submit", value="Submit and Register!")
+			input(id="saveform", name="saveForm", type="submit", value="Submit and Register!")
 
 			.clear
 
 		section#hidden
-			input(id="idstamp", name="idstamp", type="hidden", value="lDwJQgFQeUGQA8UOUcMJ9Xw6luC4gbKQEw+8eu0ZSmY=")
+			input(id="idstamp", name="idstamp", type="hidden", value="XwQcGednvGJQDUNa1/MYO9Qbh3WkbpWbwEUAMM3+LHE=")
