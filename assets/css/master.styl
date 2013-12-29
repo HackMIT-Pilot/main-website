@@ -7,7 +7,7 @@ yellow = #FFCF69
 bordersize = 2px
 borderdist = -10px
 sfont = Arvo, serif
-ssfont = "Whitney HTF", "Whitney HTF Book", "Open Sans", "Segoe UI", sans-serif
+ssfont = "Whitney HTF", "Whitney HTF Light", "Whitney HTF Book", "Open Sans", "Segoe UI", sans-serif
 maxwidth = 1200px
 normalize()
 base()
@@ -19,7 +19,7 @@ body
     background linear-gradient(top, blue 7%, darken(blue, 20%) 30%)
     color white
     font-family ssfont
-    font-weight 200
+    font-weight 300
     font-size 22px
     line-height 1.4
 
@@ -140,7 +140,7 @@ h5
                 display inline-block
                 line-height 75px
                 padding 10px 0
-                margin 10px 10px
+                margin 2px
 
                 &:hover
                     text-decoration none
@@ -447,8 +447,21 @@ footer
 #parentcontact
     label
         width: 280px
-    input
 
+.mentor
+    input[type='text'], input[type='email']
+        width 390px
+    span
+        margin-left 288px
+    label
+        width: 280px
+    #nametag
+        width 390px
+
+#mentoranswer
+    textarea
+        width: 60%
+        height: 150px
 
 #safety
     #safetywaiver, #mentorwaiver
@@ -510,5 +523,9 @@ footer
     h5
         font-weight 700
         padding-top 20px
+
+.faq
+    h5
+        color darken(blue, 40%)
 
 @import '_mq'

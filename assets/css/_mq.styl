@@ -22,19 +22,6 @@
     .wrap
         padding-left 40px
         padding-right 40px
-    .section
-        &.sponsors
-            img
-                height 50px
-                margin 5px
-        .sponsorlogo
-            a
-                margin 5px
-                padding 15px
-            #google
-                vertical-align -15px
-                height 60px
-                margin 0
 
 
 @media(max-width: 768px)
@@ -65,19 +52,11 @@
     footer
         .top
             display inline
-    .section
-        &.sponsors
-            img
-                height 50px
-                margin 0
-        .sponsorlogo
-            a
-                margin 0
-                padding 5px
-            #google
-                vertical-align 0
-                margin 0
-
+    .sponsorlogo
+        a
+            margin 4px
+            padding 4px
+            height 60px
 
 @media(max-width: 650px)
     nav
@@ -116,12 +95,13 @@
         &.sponsors
             img, a
                 height 30px
-                padding 0
-                margin 0
+                padding 4px
+                margin 5px
                 vertical-align 0
             #google
                 height 40px
-                vertical-align -13px
+                vertical-align -10px
+                margin-top -10px
             h5
                 margin-top 10px
                 font-size 18px
@@ -164,6 +144,9 @@
 
 @media(max-width: 400px)
     .leader
+        background url(../img/dome_transparent_iphone.png)
+        background-size auto 110%
+        background-position 0 -50px
         h2
             font-size 32px
     header
@@ -181,7 +164,16 @@
         img
             margin-top 5px
             width 100px
+    .sponsorlogo
+        a
+            margin 4px
+            padding 4px
+        #google
+            float left
+            margin-top -10px
     .register
         margin 0
     h2
-        font-size 24px
+        font-size 26px
+    h3
+        font-size 18px
