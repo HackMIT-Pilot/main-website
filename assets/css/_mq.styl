@@ -62,6 +62,9 @@
     #first, #pilot
         margin 0
         text-align center
+    footer
+        .top
+            display inline
     .section
         &.sponsors
             img
@@ -82,15 +85,15 @@
         position relative
         margin 0
         a
-            display block
+            display inline-block
             font-size 20px
-            padding 5px
+            padding 10px 15px
             &:hover
                 color darken(blue, 30%)
                 background #fff
             &.register
                 background 0
-                padding 5px
+                padding 10px 15px
                 color #fff
                 margin 0
                 &:hover
@@ -99,8 +102,6 @@
                     hover-pop: 1
     header
         margin-top 20px
-        h2
-            font-size 24px
     .button
         &.register
             font-size 36px
@@ -160,3 +161,27 @@
                 display block
                 a
                     border-bottom 0
+
+@media(max-width: 400px)
+    .leader
+        h2
+            font-size 32px
+    header
+        margin-top 0px
+        h1
+            font-size 65px
+        #first, #pilot
+            font-size 26px
+    .social
+        display none
+    h3#google
+        font-size 18px
+        opacity 1
+        margin-top 0px
+        img
+            margin-top 5px
+            width 100px
+    .register
+        margin 0
+    h2
+        font-size 24px
