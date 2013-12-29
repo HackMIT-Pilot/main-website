@@ -76,7 +76,7 @@
                 margin 0
 
 
-@media(max-width: 480px)
+@media(max-width: 650px)
     nav
         background darken(blue, 30%)
         position relative
@@ -88,15 +88,15 @@
             &:hover
                 color darken(blue, 30%)
                 background #fff
-            &.right
-                float none
+            &.register
                 background 0
                 padding 5px
                 color #fff
-                font-weight 500
+                margin 0
                 &:hover
                     color darken(blue, 30%)
                     background #fff
+                    hover-pop: 1
     header
         margin-top 20px
         h2
@@ -120,6 +120,7 @@
                 vertical-align 0
             #google
                 height 40px
+                vertical-align -13px
             h5
                 margin-top 10px
                 font-size 18px
@@ -150,3 +151,12 @@
         textarea#why
             width 90%
             height 170px
+    footer
+        a
+            border-bottom 1px solid #fff
+        .links
+            padding-top 10px
+            h4
+                display block
+                a
+                    border-bottom 0

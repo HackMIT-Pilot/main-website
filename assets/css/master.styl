@@ -6,8 +6,8 @@ bluegreen = #76A8A9
 yellow = #FFCF69
 bordersize = 2px
 borderdist = -10px
-sfont = Arvo, Tahoma, serif
-ssfont = "Whitney HTF", "Whitney HTF Book", sans-serif
+sfont = Arvo, serif
+ssfont = "Whitney HTF", "Whitney HTF Book", "Open Sans", "Segoe UI", sans-serif
 maxwidth = 1200px
 normalize()
 base()
@@ -145,6 +145,7 @@ h5
                 &:hover
                     text-decoration none
                     border 0
+                    opacity 0.7
                 img
                     max-height 60px
                     width auto
@@ -161,11 +162,15 @@ h5
 
 #first
     margin-left -300px
+    a:hover
+        border-bottom 1px solid #fff
 
 #pilot
     margin-left 400px
     font-style italic
     margin-top -20px
+    a:hover
+        border-bottom 1px solid #fff
     img
         opacity 0.9
         height 50px
@@ -211,7 +216,6 @@ h5
         padding 30px 46px 26px 43px
         font-size 46px
         transition: all 200ms;
-        transition: all 200ms;
         background #eee
         background linear-gradient(top, #fff 7%, #eee 100%)
 
@@ -219,7 +223,7 @@ h5
             background #fff
             background linear-gradient(top, #eee 7%, #fff 100%)
             transition: all 200ms;
-            transition: all 200ms;
+            hover-pop: 1.2 3deg true
 
     &.small
         padding 0
@@ -250,14 +254,13 @@ h5
         margin-top -16px
 
 .social
-    margin 0 auto
-    text-align center
-    width 350px
-    padding-left 70px
-
+    margin 0
+    float right
     #facebook, #twitter
         display inline-block
-        float left
+        margin 0
+        margin-top 20px
+        float right
 
 .wrap
     padding 0 50px
@@ -320,17 +323,18 @@ nav
         &.current
             background bluegreen
 
-        &.right
-            float right
+        &.register
             background #fff
-            padding-left 30px
-            padding-right 30px
-            color darken(blue, 30%)
-            font-weight bold
+            margin-left 20px
+            color blue
+            text-transform uppercase
+            hover-pop: 1.1 3deg true
+            transition: all 200ms;
 
             &:hover
-                background bluegreen
-                color white
+                background #fff
+                color blue
+                transition: all 200ms;
 
 
 .google-maps
@@ -355,6 +359,9 @@ footer
 
     .break
         clearfix()
+
+    a:hover
+        border-color #ddd
 
 // form
 .register
@@ -396,7 +403,8 @@ footer
         margin-bottom: 7px
         font-size: 22px
         padding: 3px 4px
-
+    #saveform
+        padding 10px
     .selectlabel
         margin-top: 13px
 
