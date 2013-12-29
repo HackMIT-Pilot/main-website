@@ -18,47 +18,24 @@
 
 @media(max-width: 900px)
     h1
-        font-size 62px
-    h2
-        font-size 28px
+        font-size 100px
     .wrap
         padding-left 40px
         padding-right 40px
-    header
-        nav div
+    .section
+        &.sponsors
+            img
+                height 50px
+                margin 5px
+        .sponsorlogo
             a
-                font-size 20px
-            &.left
-                margin-left -360px
+                margin 5px
+                padding 15px
+            #google
+                vertical-align -15px
+                height 60px
+                margin 0
 
-            &.right
-                margin-right -400px
-
-
-@media(max-width: 800px)
-    h1
-        font-size 62px
-    .button
-        font-size 20px
-        padding 13px 14px 12px 14px
-        &.small
-            font-size 15px
-    header
-        nav div
-            a
-                font-size 20px
-            &.left
-                margin-left -310px
-
-            &.right
-                margin-right -350px
-        h1
-            padding 0 15px
-            a
-                width 200px
-                height 90px
-
-                background-size contain
 
 @media(max-width: 768px)
     #headwrap
@@ -66,37 +43,35 @@
     .borders
         display none
 
+    .leader
+        background url(../img/dome_transparent_mobile.png)
+        background-size auto 130%
+
     .wrap
         padding-left 10px
         padding-right 10px
     h1
-        font-size 28px
-    h2
-        font-size 28px
-    h3
-        font-size 17px
-        margin-top 10px
-
-    header
-        h1
-            border 0px
-        nav 
-            div
-                position static
-
-                &.left, &.right
-                    margin-left 0
-                    margin-right 0
-                    display inline-block
-
-                a
-                    padding 15px 10px
-                    margin 0
-                    font-size 15px
-
-                    &:hover
-                        border 0
-
-            border-top 2px solid white
-            padding 10px 0
+        font-size 72px
+    .leader h2
+        margin-top 30px
+        font-size 40px
+    h3#google
+        font-size 24px
+        img
+            width 150px
+    #first, #pilot
+        margin 0
+        text-align center
+    .section
+        &.sponsors
+            img
+                height 50px
+                margin 0
+        .sponsorlogo
+            a
+                margin 0
+                padding 5px
+            #google
+                vertical-align 0
+                margin 0
 

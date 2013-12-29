@@ -13,7 +13,10 @@ normalize()
 base()
 
 body
-    background -webkit-linear-gradient(top, blue 7%, darken(blue, 20%) 30%)
+    font-smoothing antialiased
+    text-rendering optimizeLegibility
+    background blue
+    background linear-gradient(top, blue 7%, darken(blue, 20%) 30%)
     color white
     font-family ssfont
     font-weight 200
@@ -100,9 +103,20 @@ h5
     a
         color white
 
+    &.short
+        background blue
+        background linear-gradient(top, blue 0%, darken(blue, 40%) 100%)
+
     &.white
         background white
         color #444
+
+        a
+            color blue
+
+    &.light
+        background #eee
+        color #000
 
         a
             color blue
@@ -115,11 +129,13 @@ h5
 
     &.sponsors
         img
-            opacity 0.5
             height 80px
             margin-right 40px
+            margin-bottom 30px
+            opacity 1
 
         .sponsorlogo
+            margin-top: -10px
             a
                 display inline-block
                 line-height 75px
@@ -129,7 +145,6 @@ h5
                 &:hover
                     text-decoration none
                     border 0
-
                 img
                     max-height 60px
                     width auto
@@ -140,9 +155,9 @@ h5
         //
     #google
         max-height 80px
-        opacity 0.5
         vertical-align -22px
-
+        margin-left 10px
+        opacity 1
 
 #first
     margin-left -300px
@@ -196,13 +211,15 @@ h5
         padding 30px 46px 26px 43px
         font-size 46px
         transition: all 200ms;
-        -webkit-transition: all 200ms;
-        background -webkit-linear-gradient(top, #fff 7%, #eee 100%)
+        transition: all 200ms;
+        background #eee
+        background linear-gradient(top, #fff 7%, #eee 100%)
 
         &:hover
-            background -webkit-linear-gradient(top, #eee 7%, #fff 100%)
+            background #fff
+            background linear-gradient(top, #eee 7%, #fff 100%)
             transition: all 200ms;
-            -webkit-transition: all 200ms;
+            transition: all 200ms;
 
     &.small
         padding 0
@@ -250,8 +267,8 @@ h5
 .leader
     line-height 1
     text-align center
-    background url(../img/dome_transparent.png)
-    background-size auto 280%
+    background url(../img/dome_transparent_big.png)
+    background-size auto 120%
 
     h2
         font-size 54px
@@ -283,17 +300,25 @@ nav
     background #333
     border-bottom: 1px solid #fff
 
+    li
+        margin 0
+        padding 0
+
     a
-        margin 0 2px
+        margin 0
         display inline-block
-        padding 15px 14px
+        padding 15px 17px
         color white
         font-size 24px
         font-family ssfont
         font-weight 500
         &:hover
-            background darken(blue, 10%)
+            background bluegreen
+            color white
             border 0
+
+        &.current
+            background bluegreen
 
         &.right
             float right
@@ -303,28 +328,30 @@ nav
             color darken(blue, 30%)
             font-weight bold
 
+            &:hover
+                background bluegreen
+                color white
+
+
 .google-maps
     position: relative
     height: 0
     overflow: hidden
 
     iframe
-    position: absolute
-    top: 0
-    left: 0
-    width: 100% !important
-    height: 100% !important
+        position: absolute
+        top: 0
+        left: 0
+        width: 100% !important
+        height: 100% !important
 
 footer
     p
         display block
-    .four
-        column(4)
-        margin-left 0
-        padding-left 0
-
-        h4
-            font-size 18px
+    h4
+        font-size 18px
+        margin-right 30px
+        display inline
 
     .break
         clearfix()
@@ -460,6 +487,7 @@ footer
                     width: 30%
                     text-align: right
                     padding-right: 20px
+
 
 
 .six
