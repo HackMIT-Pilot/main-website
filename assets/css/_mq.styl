@@ -75,3 +75,78 @@
                 vertical-align 0
                 margin 0
 
+
+@media(max-width: 480px)
+    nav
+        background darken(blue, 30%)
+        position relative
+        margin 0
+        a
+            display block
+            font-size 20px
+            padding 5px
+            &:hover
+                color darken(blue, 30%)
+                background #fff
+            &.right
+                float none
+                background 0
+                padding 5px
+                color #fff
+                font-weight 500
+                &:hover
+                    color darken(blue, 30%)
+                    background #fff
+    header
+        margin-top 20px
+        h2
+            font-size 24px
+    .button
+        &.register
+            font-size 36px
+            padding 15px 16px 16px 23px
+            transition: 0
+            &:active
+                color darken(blue, 30%)
+                background #fff
+    .social
+        padding-left 40px
+    .section
+        &.sponsors
+            img, a
+                height 30px
+                padding 0
+                margin 0
+                vertical-align 0
+            #google
+                height 40px
+            h5
+                margin-top 10px
+                font-size 18px
+    h2
+        font-size 36px
+    .faq
+        .wrap, .six
+            width 100%
+            margin 0
+            padding 0
+        h5
+            font-size 24px
+        span
+            font-size 20px
+            line-height 0.8em
+            font-weight 500
+        h3
+            font-size 28px
+            font-weight 700
+            margin-bottom 10px
+            margin-top 30px
+            background darken(blue, 30%)
+            padding 15px 5px
+            color #fff
+    .register
+        span
+            display none
+        textarea#why
+            width 90%
+            height 170px
