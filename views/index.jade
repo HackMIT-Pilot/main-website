@@ -4,11 +4,17 @@
         header
             span#first <a href="http://hackmit.org" target="_blank">HackMIT</a> presents:
             h1 Blueprint
-            span#pilot A <a href="http://www.gopilot.org/" target="_blank">Pilot event</a>
+            //
+                span#pilot A <a href="http://www.gopilot.org/" target="_blank">Pilot event</a>
+            span#pilot <a href="http://www.gopilot.org/" target="_blank">a <img src="/img/alt_underline_white_800.png"> event</a>
 
         h2 Build your skills. Change the world.<br>February 22, 2014.
         #countdown Registration opens in
             #countdowntext
+
+        //
+            include signup.html
+
         //
             a(class='button register', href='/register') <i class="fa fa-rocket"></i> Register
 
@@ -28,11 +34,13 @@
     .wrap
         h2 Sponsors
         .sponsorlogo
-            a(href='http://mit.edu', target='blank')
+            a(href='http://studentlife.mit.edu/sao', target='blank')
                 img(src='/img/sponsors/mit.png')#mit
             a(href='http://techx.mit.edu', target='blank')
                 img(src='/img/sponsors/techx_color.png')#techx
-            a(href='http://google.com', target='blank')
+            a(href='http://www.gopilot.org', target='blank')
+                img(src='/img/sponsors/pilot.png')#pilot
+            a(href='http://www.google.com/about/locations/boston/', target='blank')
                 img(src='/img/sponsors/google_color.png')#google
 
 
