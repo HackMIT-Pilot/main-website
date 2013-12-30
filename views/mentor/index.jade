@@ -1,4 +1,5 @@
-<!--[if lte IE 7]><meta http-equiv="REFRESH" content="0;url=https://hackmit.wufoo.com/forms/zetdury0ph5y4n/#public"><![endif]-->
+//
+	<!--[if lte IE 7]><meta http-equiv="REFRESH" content="0;url=https://hackmit.wufoo.com/forms/zetdury0ph5y4n/#public"><![endif]-->
 
 script(src="/js/jquery.simplyCountable.js")
 script(src="/js/mentor.js") 
@@ -10,95 +11,95 @@ script(src="/js/mentor.js")
 
 .section.white.register.mentor
 	.wrap
-		p The students attending Blueprint will have a wide range of abilities: some have never coded before, while others have followed Java tutorials since age 4. As a mentor, your role is to help groups at all points along this spectrum build their ideas. As the event progresses, you’ll develop a relationship with a few groups based on the match between your skills and their requirements, and you’ll both be routinely checking in with these groups and floating around in case other groups need you!
+		p The students attending Blueprint will have a wide range of abilities: some have never coded before, while others have followed Java tutorials since age 4. <strong>As a mentor, your role is to help groups at all points along this spectrum build their ideas.</strong> As the event progresses, you’ll develop a relationship with a few groups based on the match between your skills and their requirements, and you’ll both be routinely checking in with these groups and floating around in case other groups need you!
 
-		p We’re looking for mentors from many different backgrounds—industry, academia, and colleges and universities—with a wide variety of skills who can inspire and connect with high school students. Specific skills could include programming languages like Python, Java, C/C++ and Objective-C; iOS and Android app development; web design in HTML/CSS and web development in Javascript/PHP/Ruby; art design; creative thinking and planning; and anything else.
+		p We’re looking for mentors from many different backgrounds—industry, academia, and colleges and universities—with a wide variety of skills who can inspire and connect with high school students. Specific skills could include programming languages like Python, Java, C/C++ and Objective-C; iOS and Android app development; web design in HTML/CSS and web development in Javascript/PHP/Ruby; art design; creative thinking and planning; and anything else. View our <a href="/BlueprintMentorInfosheet.pdf">Mentor Info Sheet</a>.
 
 	.clear
 
+	.wrap
+		h3 Mentor Registration opening <strong>Jan 10</strong>!
 
-	form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/zetdury0ph5y4n/#public")
-		section#personalinfo
-			h3 Mentor Registration
+	//
+		form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/zetdury0ph5y4n/#public")
+			section#personalinfo
+				h3 Mentor Registration
 
-			label(id="label_name", for="Field1") Name
-			input(id="name", name="Field1", type="text", class="medium", spellcheck="false", required)
-			
-			label(id="label_email", for="Field2") Email
-			input(id="email", name="Field2", type="email", class="medium", spellcheck="false", required)
+				label(id="label_name", for="Field1") Name
+				input(id="name", name="Field1", type="text", class="medium", spellcheck="false", required)
+				
+				label(id="label_email", for="Field2") Email
+				input(id="email", name="Field2", type="email", class="medium", spellcheck="false", required)
 
-			label(id="label_tshirt", for="Field113") T-shirt Size
-			select(id="tshirt", name="Field113")
-				option(value="Unisex XS") Unisex XS
-				option(value="Unisex S") Unisex S
-				option(value="Unisex M" selected) Unisex M
-				option(value="Unisex L") Unisex L
-				option(value="Unisex XL") Unisex XL
-				option(value="Woman&#8217;s XS") Woman&#8217;s XS
-				option(value="Woman&#8217;s S") Woman&#8217;s S
-				option(value="Woman&#8217;s M") Woman&#8217;s M
-				option(value="Woman&#8217;s L") Woman&#8217;s L
-				option(value="Woman&#8217;s XL") Woman&#8217;s XL
+				label(id="label_tshirt", for="Field113") T-shirt Size
+				select(id="tshirt", name="Field113")
+					option(value="Unisex XS") Unisex XS
+					option(value="Unisex S") Unisex S
+					option(value="Unisex M" selected) Unisex M
+					option(value="Unisex L") Unisex L
+					option(value="Unisex XL") Unisex XL
+					option(value="Woman&#8217;s XS") Woman&#8217;s XS
+					option(value="Woman&#8217;s S") Woman&#8217;s S
+					option(value="Woman&#8217;s M") Woman&#8217;s M
+					option(value="Woman&#8217;s L") Woman&#8217;s L
+					option(value="Woman&#8217;s XL") Woman&#8217;s XL
 
-			label(id="label_status", for="Field3") Current Status
-			select(id="status", name="Field3")
-				option(value="Undergrad Student" checked) Undergrad Student
-				option(value="Grad Student") Grad Student
-				option(value="Professor") Professor
-				option(value="Industry Professional") Industry Professional
+				label(id="label_status", for="Field3") Current Status
+				select(id="status", name="Field3")
+					option(value="Undergrad Student" checked) Undergrad Student
+					option(value="Grad Student") Grad Student
+					option(value="Professor") Professor
+					option(value="Industry Professional") Industry Professional
 
-			label(id="label_nametag", for="Field109") My top skills are:
-			input(id="nametag", name="Field109", placeholder="Android, C++, Web Design, Skiing", maxlength="35", required)
-			span This list of top skills will go on your name badge. <strong id="counter"></strong> characters remaining.
+				label(id="label_nametag", for="Field109") My top skills are:
+				input(id="nametag", name="Field109", placeholder="Android, C++, Web Design, Skiing", maxlength="35", required)
+				span This list of top skills will go on your name badge. <strong id="counter"></strong> characters remaining.
 
-			#mentoranswer
+				#mentoranswer
 
-				label(id="label_mentorskills", for="Field110") Please tell us a bit more about your technical skills.
-				textarea(id="mentorskills", name="Field110" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
+					label(id="label_mentorskills", for="Field110") Please tell us a bit more about your technical skills.
+					textarea(id="mentorskills", name="Field110" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
 
-				label(id="label_teachexp", for="Field111") Please tell us about any experience you have with instructing/teaching students.
-				textarea(id="teachexp", name="Field111" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
+					label(id="label_teachexp", for="Field111") Please tell us about any experience you have with instructing/teaching students.
+					textarea(id="teachexp", name="Field111" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
 
-			.clear
+				.clear
 
-		section#safety
-			h3 Legal Waivers
+			section#safety
+				h3 Legal Waivers
 
-			#safetywaiver
-				h4 Blueprint Important Safety Policies and Media Release
-				p Revision 1; revised Dec 26, 2013
+				#safetywaiver
+					h4 Blueprint Important Safety Policies and Media Release
+					p Revision 1; revised Dec 26, 2013
 
-				p TechX HackMIT (an MIT student organization) presents Blueprint, a 12-hour Pilot event where high school students work together in teams to design, build, and pitch their own apps and websites. Blueprint aims provide a <strong>safe and welcoming environment for all students</strong> and their creative ideas. We need to ensure we can maintain a positive atmosphere so you can focus on learning and inspiring others.
+					p TechX HackMIT (an MIT student organization) presents Blueprint, a 12-hour Pilot event where high school students work together in teams to design, build, and pitch their own apps and websites. Blueprint aims provide a <strong>safe and welcoming environment for all students</strong> and their creative ideas. We need to ensure we can maintain a positive atmosphere so you can focus on learning and inspiring others.
 
-				p In the following policies, “I” and “you” is defined as the high school student attendee registering this application. “Your parent/guardian” refers to the parent or legal guardian of the high school student attendee. <strong>By clicking "Submit" below, you and your parent/guardian agree to the following</strong>:
+					p In the following policies, “I” and “you” is defined as the high school student attendee registering this application. “Your parent/guardian” refers to the parent or legal guardian of the high school student attendee. <strong>By clicking "Submit" below, you and your parent/guardian agree to the following</strong>:
 
-				ul
-					li I will <strong>not bring weapons of any kind to Blueprint</strong>. Firearms, knives, and other weapons are banned. If you can't bring it on an airplane, don't bring it here!
-					li I will <strong>not bring anything illegal</strong> to Blueprint.
-					li I will conduct myself in a manner respectful to others. If I don’t, I understand I may be asked to leave before the event is finished.
-					li If I borrow a laptop from Blueprint, I will never leave it unattended, and will return it in good condition.
-					li I hereby <strong>grant permission to Blueprint and its staff to photograph or record my image, likeness, or depiction</strong> for use in promotional and press materials.
-					li I agree that if I am under age 18, I have reviewed this document with my parent/guardian and they agree to the conditions herein on my behalf.
+					ul
+						li I will <strong>not bring weapons of any kind to Blueprint</strong>. Firearms, knives, and other weapons are banned. If you can't bring it on an airplane, don't bring it here!
+						li I will <strong>not bring anything illegal</strong> to Blueprint.
+						li I will conduct myself in a manner respectful to others. If I don’t, I understand I may be asked to leave before the event is finished.
+						li If I borrow a laptop from Blueprint, I will never leave it unattended, and will return it in good condition.
+						li I hereby <strong>grant permission to Blueprint and its staff to photograph or record my image, likeness, or depiction</strong> for use in promotional and press materials.
+						li I agree that if I am under age 18, I have reviewed this document with my parent/guardian and they agree to the conditions herein on my behalf.
 
-				//
-					p In summary, don’t bring any weapons or anything illegal. Be respectful to yourself, other attendees, and event staff. If we lend you a laptop, we expect it will be returned in the condition it was lended out to you. You give us the right to use your picture in our marketing materials. Also, if you are a minor, make sure you parent or guardian has given you permission to attend.
+					p With that out of the way, we know you’ll have a fantastic time at Blueprint! We can’t wait!
 
-				p With that out of the way, we know you’ll have a fantastic time at Blueprint! We can’t wait!
-
-			#mentorwaiver
-				h4 Blueprint Mentor Policies
-				p Revision 1; revised Dec 28, 2013
+				#mentorwaiver
+					h4 Blueprint Mentor Policies
+					p Revision 1; revised Dec 28, 2013
 
 
-			.clear
+				.clear
 
-		section#submit
-			h3 Submit
-			p You made it! Press the button below to register.
+			section#submit
+				h3 Submit
+				p You made it! Press the button below to register.
 
-			input(id="saveform", name="saveForm", type="submit", value="Submit and Register!")
+				input(id="saveform", name="saveForm", type="submit", value="Submit and Register!")
 
-			.clear
+				.clear
 
-		section#hidden
-			input(id="idstamp", name="idstamp", type="hidden", value="EQH5nOVXVh4+D9gZPcANvC6sGu5OF75ueBGT/4JtpKc=")
+			section#hidden
+				input(id="idstamp", name="idstamp", type="hidden", value="EQH5nOVXVh4+D9gZPcANvC6sGu5OF75ueBGT/4JtpKc=")

@@ -1,3 +1,4 @@
+
 .section.leader.darkblue
     .wrap
         header
@@ -6,7 +7,11 @@
             span#pilot A <a href="http://www.gopilot.org/" target="_blank">Pilot event</a>
 
         h2 Build your skills. Change the world.<br>February 22, 2014.
-        a(class='button register', href='/register') <i class="fa fa-rocket"></i> Register
+        #countdown Registration opens in
+            #countdowntext
+        //
+            a(class='button register', href='/register') <i class="fa fa-rocket"></i> Register
+
 
         .clear.noheight
 
@@ -17,7 +22,7 @@
 .section.white
     .wrap
 
-        h2 Have you been waiting to turn your great idea into a real app? Wish you knew how to code? Blueprint is an exciting <strong class="blue bordertext">12-hour hackathon</strong> for Boston-area high school students of <strong class="blue bordertext">all skill levels</strong>. Develop your programming skills, meet other excited coders, and find opportunities to ignite your passions.
+        h2 Have you been waiting to turn your great idea into a real app? Wish you knew how to code? Blueprint is an exciting <strong class="blue bordertext">14-hour hackathon</strong> for Boston-area high school students of <strong class="blue bordertext">all skill levels</strong>. Develop your programming skills, meet other excited coders, and find opportunities to ignite your passions.
 
 .section.light.sponsors
     .wrap
@@ -35,6 +40,9 @@
 
 .section.white
     .wrap
-        h2 Ready to change the world?&nbsp;
-            a(href='/register') Register now.
+        //
+            h2 Ready to change the world?&nbsp;
+                a(href='/register') Register now.
         h3 Questions? Look at our <a href="/faq">FAQ</a>!
+
+script(src="/js/countdown.js")
