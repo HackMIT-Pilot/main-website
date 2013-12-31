@@ -543,12 +543,28 @@ footer
     padding 0 20px
     background-clip content-box
 
-    h5
-        font-weight 700
-        padding-top 20px
 
 .faq
+    .seven
+        column(7)
+        margin 0
+        padding 0
+        background-clip content-box
+        &.left
+            padding-right 10px
+        &.right
+            padding-left 10px
+    h3
+        font-size 32px
+        margin-bottom 10px
     h5
+        border-top 1px dashed #bbb
+        padding-top 10px
+        font-weight 700
+        padding-top 20px
+        margin-top 30px
         color darken(blue, 40%)
+        &:first-child
+            margin-top 0
 
 @import '_mq'
