@@ -24,8 +24,13 @@
                 float right
             span
                 font-size 22px
-
-
+    .sponsorlogo
+        img
+            height 30px
+        #pilot
+            height 40px
+        #google
+            height 40px
 
 @media(max-width: 900px)
     .wrap
@@ -33,26 +38,25 @@
         padding-right 40px
 
 @media(max-width: 768px)
-    #countdown
-        font-size 26px
-        padding-top 10px
-        padding-bottom 15px
-        width 80%
-        margin 0 auto
-        margin-bottom 30px
-        tr
-            td
+    .person
+        margin-bottom 20px 0
+        height 250px
+        img
+            width 100%
+            height auto
+        a
+            h5
                 font-size 18px
-            &:first-child
-                td
-                    font-size 26px
-        td
-            padding 0px 4px
-
+        h6
+            font-size 14px
     #headwrap
         padding 0 10px
     .borders
         display none
+
+    nav
+        .social
+            display none
 
     .leader
         background url(../img/dome_transparent_mobile.png)
@@ -83,17 +87,36 @@
     footer
         .top
             display inline
-    .sponsorlogo
-        a
-            margin 4px
-            padding 4px
-            height 60px
+    .sponsors
+        img
+            height 30px
+            margin 20px 60px
+
+        .sponsorlogo
+            #pilot
+                height 40px
+            #google
+                height 40px
+
     #logotext
         width 420px
         height 110px
         background-size 100%
 
 @media(max-width: 650px)
+    .person
+        column(14)
+        margin-bottom 10px
+        height auto
+        img
+            display none
+        a
+            h5
+                font-size 20px
+                width 100%
+                margin-bottom -10px
+        h6
+            font-size 12px
     nav.page, nav.homepage
         display none
     header
@@ -120,10 +143,10 @@
                 padding 4px
                 margin 5px
                 vertical-align 0
-            #google
+            img#pilot
                 height 40px
-                vertical-align -10px
-                margin-top -10px
+            img#google
+                height 40px
             h5
                 margin-top 10px
                 font-size 18px
@@ -167,11 +190,7 @@
             h4
                 display block
                 a
-                    border-bottom 0
-    .sponsorlogo
-        #pilot
-            margin-top -10px
-            height 40px     
+                    border-bottom 0  
     .seven.right
             margin-top 30px
     .social

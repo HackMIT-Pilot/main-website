@@ -121,7 +121,6 @@ h5
 
     &.short
         background blue
-        background linear-gradient(top, blue 0%, darken(blue, 40%) 100%)
         margin-top 50px
 
     &.white
@@ -178,62 +177,6 @@ h5
     h2
         font-size 42px
 
-#container
-    z-index 110
-    display block
-    position relative
-
-.snap-drawers
-    position fixed
-    top 5px
-    left 5px
-    width 175px
-    display none
-    z-index 10
-
-    h3
-        font-size 24px
-        margin 0
-        margin-bottom 5px
-    ul
-        margin 0
-        padding 0
-        width 90%
-        &#social
-            margin-top 20px
-        li
-            margin 0
-            padding 0
-            width 100%
-            list-style none
-            a
-                background lighten(blue, 20%)
-                color #fff
-                width 100%
-                height 30px
-                font-size 24px
-                display block
-                padding 5px
-                padding-left 10px
-                margin-bottom 1px
-                &:hover
-                    border 0
-                    background darken(blue, 10%)
-                &:active
-                    background bluegreen
-
-.snapjs-left .snap-drawers
-    display block
-
-#slidebutton
-    padding 5px 10px
-    background darken(blue, 30%)
-    position absolute
-    left 20px
-    top 20px
-    border-radius 4px
-    z-index 20
-
 #logotext
     width 555px
     height 130px
@@ -259,20 +202,6 @@ header
             opacity 1
             height 40px
             vertical-align -6px
-
-#emailform
-    input
-        font-size 24px
-
-
-#firstoverlay
-    background blue
-    background linear-gradient(top, blue 7%, darken(blue, 20%) 100%)
-    width 100%
-    height 100%
-    position absolute
-    z-index 5
-    animation-delay 3.5s
 
 .wrap, header 
     max-width maxwidth
@@ -336,19 +265,6 @@ header
 
         &:hover
             border-bottom 1px solid white
-
-#countdown
-    font-size 48px
-    padding-top 30px
-    padding-bottom 30px
-    border 1px solid #fff
-    background #fff
-    color blue
-    width 50%
-    margin 0 auto
-    margin-bottom 20px
-    td
-        padding 0px 20px
 
 #google
     margin-top 28px
@@ -427,7 +343,7 @@ nav
     padding 0
     margin 0
     width 100%
-    z-index 15
+    z-index 150
     box-shadow 0px 10px 20px -10px rgba(0, 0, 0, 0.2)
     background darken(blue, 15%)
     border-bottom 1px solid #fff
@@ -559,7 +475,21 @@ footer
         font-size 14px
         text-transform uppercase
 
+// fancy fade in
+#firstoverlay
+    background blue
+    background linear-gradient(top, blue 7%, darken(blue, 20%) 100%)
+    width 100%
+    height 100%
+    position absolute
+    z-index 7
+    animation-delay 3.6s
+
 // form
+#emailform
+    input
+        font-size 24px
+
 .register
     h3
         border-top: 1px dotted #ddd
@@ -739,5 +669,64 @@ footer
         color darken(blue, 40%)
         &:first-child
             margin-top 0
+
+
+// mobile slide menu
+
+#container
+    z-index 10
+    display block
+    position relative
+
+.snap-drawers
+    position fixed
+    top 5px
+    left 5px
+    width 175px
+    display none
+    z-index 10
+
+    h3
+        font-size 24px
+        margin 0
+        margin-bottom 5px
+    ul
+        margin 0
+        padding 0
+        width 90%
+        &#social
+            margin-top 20px
+        li
+            margin 0
+            padding 0
+            width 100%
+            list-style none
+            a
+                background lighten(blue, 20%)
+                color #fff
+                width 100%
+                height 30px
+                font-size 24px
+                display block
+                padding 5px
+                padding-left 10px
+                margin-bottom 1px
+                &:hover
+                    border 0
+                    background darken(blue, 10%)
+                &:active
+                    background bluegreen
+
+.snapjs-left .snap-drawers
+    display block
+
+#slidebutton
+    padding 5px 10px
+    background darken(blue, 30%)
+    position absolute
+    left 20px
+    top 20px
+    border-radius 4px
+    z-index 20
 
 @import '_mq'
