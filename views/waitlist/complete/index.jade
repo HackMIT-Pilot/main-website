@@ -1,10 +1,19 @@
-.section
-	.wrap
-		header
-			h1.sans Register for Waitlist
+extends ../../layout
 
-.section.white.register
-	.wrap
-		h3 <i class="fa fa-check"></i> Waitlist registration completed.
-		p Thanks for your time.
-		strong We will notify you automatically via email if you get a spot.
+block title
+	title Waitlist Registration Complete | HackMIT presents: Blueprint
+
+block nav
+	include ../../nav
+
+block content
+	.section
+		.wrap
+			header
+				h1.sans Register for Waitlist
+
+	.section.white.register
+		.wrap
+			h3 <i class="fa fa-check"></i> Waitlist registration completed.
+			p Thanks for your time.
+			strong We will notify you automatically via email if you get a spot.

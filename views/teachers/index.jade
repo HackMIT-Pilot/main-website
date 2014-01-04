@@ -1,0 +1,39 @@
+extends ../layout
+
+block title
+	title Teachers | HackMIT presents: Blueprint
+
+block nav
+	include ../nav
+
+block content
+	.section.short#teachers
+		.wrap
+			header
+				h1.sans Teachers
+
+	.section.white.register.mentor
+		.wrap
+			p Are you a Boston-area teacher interested in getting your students excited about computer science and the tech scene? Want your students to have the opportunity to pick up some new programming skills? Sign up to be on the Blueprint Teacher Interest  mailing list. We promise we won’t fill up your inbox, but we’ll keep you in the loop about Blueprint and related upcoming opportunities for students and teachers interested in computer science.
+
+		.clear
+
+		form.wrap(id="mc-subscribe", name="mc-embedded-subscribe-form", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="http://hackmit.us3.list-manage.com/subscribe/post?u=c2e71f116bf5017262d00daee&amp;id=1ee8e92504")
+			section#personalinfo
+				h3 Teacher Email List Signup
+
+				label(id="label_email", for="mce-EMAIL") Email
+				input(id="email", name="mce-EMAIL", type="email", class="medium", spellcheck="false", required)
+
+				label(id="label_fname", for="mce-FNAME") First Name
+				input(id="name", name="mce-FNAME", type="text", class="medium", spellcheck="false")
+
+				label(id="label_fname", for="mce-LNAME") Last Name
+				input(id="name", name="mce-LNAME", type="text", class="medium", spellcheck="false")
+
+				.clear
+
+				input(id="saveform", name="subscribe", type="submit", value="Subscribe!")
+
+			section#hidden
+				input(id="crap", name="b_c2e71f116bf5017262d00daee_1ee8e92504", type="text", value="")

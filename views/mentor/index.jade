@@ -1,27 +1,44 @@
-//
-	<!--[if lte IE 7]><meta http-equiv="REFRESH" content="0;url=https://hackmit.wufoo.com/forms/zetdury0ph5y4n/#public"><![endif]-->
+extends ../layout
 
-script(src="/js/jquery.simplyCountable.js")
-script(src="/js/mentor.js") 
+block title
+	title Mentor | HackMIT presents: Blueprint
 
-.section.short
-	.wrap
-		header
-			h1.sans Mentor
+block nav
+	include ../nav
 
-.section.white.register.mentor
-	.wrap
-		p The students attending Blueprint will have a wide range of abilities: some have never coded before, while others have followed Java tutorials since age 4. <strong>As a mentor, your role is to help groups at all points along this spectrum build their ideas.</strong> As the event progresses, you’ll develop a relationship with a few groups based on the match between your skills and their requirements, and you’ll both be routinely checking in with these groups and floating around in case other groups need you!
+block content
+	<!--[if lte IE 7]><meta http-equiv="REFRESH" content="0;url=https://techx.wufoo.com/forms/z150z4qk0pjj9wm/#public"><![endif]-->
 
-		p We’re looking for mentors from many different backgrounds—industry, academia, and colleges and universities—with a wide variety of skills who can inspire and connect with high school students. Specific skills could include programming languages like Python, Java, C/C++ and Objective-C; iOS and Android app development; web design in HTML/CSS and web development in Javascript/PHP/Ruby; art design; creative thinking and planning; and anything else. View our <a href="/BlueprintMentorInfosheet.pdf">Mentor Info Sheet</a>.
+	script(src="/js/jquery.simplyCountable.js")
+	script(src="/js/mentor.js") 
 
-	.clear
+	.section.short#mentor
+		.wrap
+			header
+				h1.sans Mentor
 
-	.wrap
-		h3 Mentor Registration opening <strong>Jan 10</strong>!
+	.section.white.register.mentor
+		.wrap
+			p The students attending Blueprint will have a wide range of abilities: some have never coded before, while others have followed Java tutorials since age 4. <strong>As a mentor, your role is to help groups at all points along this spectrum build their ideas.</strong>
 
-	//
-		form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://hackmit.wufoo.com/forms/zetdury0ph5y4n/#public")
+			p As the event progresses, you’ll develop a relationship with a few groups based on the match between your skills and their requirements, and you’ll both be routinely checking in with these groups and floating around in case other groups need you!
+
+			p We’re looking for mentors from many different backgrounds—industry, academia, and colleges and universities—with a wide variety of skills who can inspire and connect with high school students. Specific skills could include:
+			ul
+				li Experience with programming languages (We see Python, Java, Ruby, and Objective-C the most at our events)
+				li iOS and Android app development
+				li Web design (HTML/CSS) and/or web development (Javascript/PHP/Ruby)
+				li Art design
+				li Creative thinking and planning
+				li Entrepreneurship
+				li Public speaking
+				li Idea generation
+
+			p View our <a href="/BlueprintMentorInfosheet.pdf">Mentor Info Sheet</a>.
+
+		.clear
+
+		form.wrap(id="register", name="register", accept-charset="UTF-8", autocomplete="off", enctype="multipart/form-data", method="post", action="https://techx.wufoo.com/forms/z150z4qk0pjj9wm/#public")
 			section#personalinfo
 				h3 Mentor Registration
 
@@ -31,8 +48,8 @@ script(src="/js/mentor.js")
 				label(id="label_email", for="Field2") Email
 				input(id="email", name="Field2", type="email", class="medium", spellcheck="false", required)
 
-				label(id="label_tshirt", for="Field113") T-shirt Size
-				select(id="tshirt", name="Field113")
+				label(id="label_tshirt", for="Field3") T-shirt Size
+				select(id="tshirt", name="Field3")
 					option(value="Unisex XS") Unisex XS
 					option(value="Unisex S") Unisex S
 					option(value="Unisex M" selected) Unisex M
@@ -44,24 +61,20 @@ script(src="/js/mentor.js")
 					option(value="Woman&#8217;s L") Woman&#8217;s L
 					option(value="Woman&#8217;s XL") Woman&#8217;s XL
 
-				label(id="label_status", for="Field3") Current Status
-				select(id="status", name="Field3")
-					option(value="Undergrad Student" checked) Undergrad Student
-					option(value="Grad Student") Grad Student
-					option(value="Professor") Professor
-					option(value="Industry Professional") Industry Professional
+				label(id="label_status", for="Field3") University / Company
+				input(id="email", name="Field3", type="text", class="medium", spellcheck="false", required)
 
-				label(id="label_nametag", for="Field109") My top skills are:
-				input(id="nametag", name="Field109", placeholder="Android, C++, Web Design, Skiing", maxlength="35", required)
+				label(id="label_nametag", for="Field4") My top skills are:
+				input(id="nametag", name="Field4", placeholder="Android, C++, Web Design, Skiing", maxlength="35", required)
 				span This list of top skills will go on your name badge. <strong id="counter"></strong> characters remaining.
 
 				#mentoranswer
 
-					label(id="label_mentorskills", for="Field110") Please tell us a bit more about your technical skills.
-					textarea(id="mentorskills", name="Field110" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
+					label(id="label_mentorskills", for="Field6") Please tell us a bit more about your technical skills.
+					textarea(id="mentorskills", name="Field6" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
 
-					label(id="label_teachexp", for="Field111") Please tell us about any experience you have with instructing/teaching students.
-					textarea(id="teachexp", name="Field111" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
+					label(id="label_teachexp", for="Field7") Please tell us about any experience you have with instructing/teaching students.
+					textarea(id="teachexp", name="Field7" placeholder="This question is optional, but it helps us figure out how to best place you in our event.", spellcheck="true")
 
 				.clear
 
@@ -102,4 +115,4 @@ script(src="/js/mentor.js")
 				.clear
 
 			section#hidden
-				input(id="idstamp", name="idstamp", type="hidden", value="EQH5nOVXVh4+D9gZPcANvC6sGu5OF75ueBGT/4JtpKc=")
+				input(id="idstamp", name="idstamp", type="hidden", value="D91J2p80U0OUP6uo7WIsEVp66QJmmhPH7XL7owCLOqQ=")
