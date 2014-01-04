@@ -1,0 +1,41 @@
+!!!
+html
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name='description', content='Blueprint is an exciting 14-hour hackathon for high school students of all skill levels. February 22, 2014 at Google Cambridge.')
+        meta(name='author', content= "HackMIT presents: Blueprint")
+        <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+        link(rel='stylesheet', href='/css/lite.css')
+
+        title Lite Page for IE | HackMIT presents: Blueprint
+    body
+        #why You are getting this page because your browser is Internet Explorer 7 or below. To see the full site, upgrade your browser.
+
+        #container
+            #header
+                img(src='/img/ie.png')
+
+            p Have you been waiting to turn your great idea into a real app? Wish you knew how to code? Blueprint is an exciting 14-hour workshop for high school students of all skill levels. Develop your programming skills, meet other excited coders, and find opportunities to ignite your passions.
+
+            ul
+                li
+                    a(href='https://techx.wufoo.com/forms/z1v2o7bw0e94ire/#public')#student Students: Register for our event!
+                li
+                    a(href='https://techx.wufoo.com/forms/z150z4qk0pjj9wm/#public')#mentor Mentors: Run our workshops!
+                li
+                    a(href='http://eepurl.com/LLjyr')#teacher Teachers: Signup on our teacher mail list.
+                li
+                    a(href='/BlueprintParentsInfosheet.pdf')#parent Parents: Take a look at our FAQs
+
+            p Organized by TechX HackMIT, an MIT student organization. <br> Contact us at <a href="mailto:blueprint@hackmit.org">blueprint@hackmit.org</a> or via <a href="https://twitter.com/MITBlueprint">Twitter</a> or <a href="https://www.facebook.com/mitblueprint">Facebook</a>.
+
+
+        <script type="text/javascript"> var $buoop = {} $buoop.ol = window.onload; window.onload=function(){ try {if ($buoop.ol) $buoop.ol();}catch (e) {} var e = document.createElement("script"); e.setAttribute("type", "text/javascript"); e.setAttribute("src", "http://browser-update.org/update.js"); document.body.appendChild(e); }</script> 
+        include google_analytics.html 
+
+        //- this must be included for live reload to work in developement
+        //- it will be automatically ignored when deployed
+        != livereload

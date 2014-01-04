@@ -3,12 +3,10 @@ html
     head
         meta(charset='utf8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-        meta(name='description', content='Blueprint is an exciting 14-hour hackathon for high school students of all skill levels, February 22, 2014 at Google Cambridge.')
+        meta(name='description', content='Blueprint is an exciting 14-hour hackathon for high school students of all skill levels. February 22, 2014 at Google Cambridge.')
         meta(name='author', content= "HackMIT presents: Blueprint")
         <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1, maximum-scale=1">
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-        block title
 
         link(rel='stylesheet', href='/css/fonts/font.css')
         link(rel='stylesheet', href='/css/master.css')
@@ -16,9 +14,11 @@ html
 
         <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
         script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js")
-        script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js")
-        script(src="/js/main.js")
+
+        block title
     body
+        <!--[if lte IE 7]><meta http-equiv="REFRESH" content="0;url=http://blueprint.hackmit.org/ie.html"><![endif]-->
+        
         block nav
 
         block content

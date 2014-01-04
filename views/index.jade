@@ -2,6 +2,8 @@ extends layout
 
 block title
     title Home | HackMIT presents: Blueprint
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js")
+    script(src="/js/homepage.js")
 
 block content
     .section.leader.darkblue
@@ -12,22 +14,25 @@ block content
                 span#pilot <a href="http://www.gopilot.org/" target="_blank">a <img src="/img/pilot_plane.png"> event</a>
 
             h2
-                p Build your skills. Change the world.<br>
+                p
+                    span Build your skills. 
+                    span Change the world.<br>
                 span Google Cambridge. February 22, 2014.
 
             a(class='button register', href='/register') <i class="fa fa-rocket"></i> Register
 
             .clear.noheight
 
-    nav.leader
+    nav.homepage
         .wrap
+            img(src='/img/blueprint_block.png')#blueprint
             a(href="/") Home
             //
                 a(href="/logistics") Logistics
             a(href="/faq") FAQ
             a(href="/register").register <i class="fa fa-rocket"></i> Register
             .social
-                #twitter <a href="https://twitter.com/MITBlueprint" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @MITBlueprint</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                #twitter <a href="https://twitter.com/MITBlueprint" class="twitter-follow-button" data-show-count="true" data-dnt="true">Follow @MITBlueprint</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 #facebook <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmitblueprint&amp;width=30&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
 
 
