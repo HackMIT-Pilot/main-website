@@ -224,10 +224,6 @@ header
     position absolute
     z-index 5
     animation-delay 3.5s
-    background url(../img/dome_full.fw.png), linear-gradient(top, blue 7%, darken(blue, 20%) 100%)
-    background-position bottom center
-    background-size auto 60%
-    background-repeat no-repeat
 
 .wrap, header 
     max-width maxwidth
@@ -338,10 +334,10 @@ header
     line-height 1
     text-align center
     // background url(../img/dome_full.fw.png)
+    background url(../img/dome_transparent_big.png)
     background-position bottom center
-    background-size auto 60%
+    background-size auto 100%
     background-repeat no-repeat
-    // padding-bottom 200px
     z-index 8
 
     h2
@@ -384,7 +380,7 @@ nav
     width 100%
     z-index 15
     box-shadow 0px 10px 20px -10px rgba(0, 0, 0, 0.2)
-    background #333
+    background darken(blue, 15%)
     border-bottom 1px solid #fff
     top 0
     transition all 200ms
@@ -425,8 +421,7 @@ nav
                 color darken(blue, 30%)
 
         &:hover
-            background darken(bluegreen, 10%)
-            color white
+            background lighten(blue, 10%)
             border 0
 
         &.current

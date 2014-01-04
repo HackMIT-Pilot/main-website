@@ -13,14 +13,12 @@ $(document).on('scroll', function() {
 
 });
 
-
 $(document).ready(function() {
 
     // check cookie
     var visited = $.cookie('blueprint_visited');
 
     if (visited == null) {
-
         $('body').scrollTop(0);
         $('head').append('<link rel="stylesheet" href="/css/animate-custom.css">');
         $('body').prepend('<div id="firstoverlay" class="animated fadeOut"></div>');
