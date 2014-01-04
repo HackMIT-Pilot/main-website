@@ -18,10 +18,10 @@ html
         block title
     body
         <!--[if lte IE 7]><meta http-equiv="REFRESH" content="0;url=http://blueprint.hackmit.org/ie.html"><![endif]-->
-        
-        block nav
 
-        block content
+        block nav
+        #container
+            block content
 
         footer.section
             .wrap.dark
@@ -35,7 +35,29 @@ html
                         h4 <a href="/BlueprintMediaKit.zip">Media kit &raquo;</a>
                 .break
 
-        include google_analytics.html 
+        include google_analytics.html
+
+        .snap-drawers
+            .snap-drawer-left
+                h3 Blueprint Menu
+                ul
+                    li
+                        a(href='/') Home
+                    li
+                        a(href='/faq') FAQ
+                    li
+                        a(href='/register') Register! <i class="fa fa-rocket"></i>
+                    li
+                        a(href='/mentor') Mentor
+                    li
+                        a(href='/teachers') Teacher Info
+                    li
+                        a(href='/BlueprintParentsInfosheet.pdf') Parent Info
+                ul#social
+                    li <a href="https://twitter.com/MITBlueprint" class="twitter-follow-button" data-show-count="true" data-dnt="true">Follow @MITBlueprint</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    li <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmitblueprint&amp;width=30&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
+
+        script(src="/js/mobile.js")
 
         //- this must be included for live reload to work in developement
         //- it will be automatically ignored when deployed
