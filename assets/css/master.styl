@@ -252,7 +252,7 @@ header
             background #fff
             background linear-gradient(top, #eee 7%, #fff 100%)
             transition: all 200ms
-            hover-pop: 1.2 3deg true
+            hover-pop: 1.1 0deg true
 
     &.small
         padding 0
@@ -377,7 +377,7 @@ nav
             margin-left 10px
             color blue
             text-transform uppercase
-            hover-pop: 1.1 3deg true
+            hover-pop: 1.1 0deg true
             display inline-block
             transition all 200ms
 
@@ -433,6 +433,8 @@ nav.homepage
         height: 100% !important
 
 footer
+    background #fff
+    color darken(blue, 0%)
     .top
         display none
         border 0
@@ -445,9 +447,11 @@ footer
 
     .break
         clearfix()
-
-    a:hover
-        border-color #ddd
+    &.section
+        a
+            color darken(blue, 40%)
+            &:hover
+                border-color #bbb
 
 
 // team
