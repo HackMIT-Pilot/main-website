@@ -146,26 +146,26 @@ h5
     &.sponsors
         h5
             margin-top -30px
-        img
-            height 60px
-            margin 20px 60px
-            margin-left 0
-            opacity 1
 
         .sponsorlogo
+            display inline
+            margin 0
+            padding 0
             a
+                display inline-block
+                margin 10px 20px
+                margin-left 0
+                padding 0
                 img
-                    width auto
+                    width 200px
+                    padding 15px
                     opacity 1
-
                     &#pilot
-                        height 70px
-                        vertical-align -3px
-                        margin-left 10px
+                        width 100px
                     &#google
-                        height 70px
-                        opacity 1
-                        vertical-align -20px
+                        width 180px
+                        margin-bottom -15px
+
                 &:hover
                     text-decoration none
                     border 0
@@ -239,10 +239,10 @@ header
     &.register
         border 0
         margin-top 20px
-        margin-bottom 40px
+        margin-bottom 20px
         color blue
-        padding 30px 46px 26px 43px
-        font-size 46px
+        padding 23px 39px 19px 35px
+        font-size 36px
         transition: all 200ms;
         background #eee
         background linear-gradient(top, #fff 7%, #eee 100%)
@@ -263,22 +263,6 @@ header
 
         &:hover
             border-bottom 1px solid white
-
-#google
-    margin-top 28px
-    text-align center
-    opacity 0.7
-    line-height 0.3em
-    letter-spacing 0.11em
-    text-transform uppercase
-    img
-        width 180px
-        margin-top 18px
-        opacity 1
-        margin-left -7px
-    span
-        letter-spacing 0.09em
-        margin-top -16px
 
 .social
     margin 0
@@ -308,6 +292,7 @@ header
             display block
             margin 0
             padding 0
+            margin-bottom -10px
             span
                 font-size 54px
                 line-height 0.8em
@@ -442,6 +427,9 @@ footer
         font-size 18px
         margin-right 30px
         display inline
+        float left
+        &.right
+            float right
 
     .break
         clearfix()

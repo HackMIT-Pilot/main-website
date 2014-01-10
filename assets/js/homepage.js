@@ -11,11 +11,11 @@ if ($(window).width() > 650) {
 
             // scroll menu styles
             if (scrollPos > 610) {
-                $('nav.homepage').removeClass('homepage');
+                $('nav.homepage').removeClass('homepage').addClass('page');
                 $('.mast').addClass('padded');
             } else {
                 $('.mast').removeClass('padded');
-                $('nav').addClass('homepage');
+                $('nav').removeClass('page').addClass('homepage');
             }
 
         });
