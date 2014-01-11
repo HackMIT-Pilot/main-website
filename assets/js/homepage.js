@@ -10,7 +10,7 @@ if ($(window).width() > 650) {
             var scrollPos = $(document).scrollTop();
 
             // scroll menu styles
-            if (scrollPos > 610) {
+            if (scrollPos > 560) {
                 $('nav.homepage').removeClass('homepage').addClass('page');
                 $('.mast').addClass('padded');
             } else {

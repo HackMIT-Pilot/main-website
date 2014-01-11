@@ -59,6 +59,10 @@
                         margin-bottom -10px
 
 @media(max-width: 900px)
+    .leader
+        background url(../img/dome_transparent_medium_compress.png)
+        background-size auto 100%
+        background-position bottom center
     .wrap
         padding-left 40px
         padding-right 40px
@@ -103,8 +107,6 @@
         font-size 32px
 
     .leader
-        background url(../img/dome_transparent_mobile.png)
-        background-size auto 130%
         h2
             p
                 margin-bottom 0
@@ -253,14 +255,16 @@
 
 @media(max-width: 400px)
     .leader
-        background url(../img/dome_transparent_iphone.png)
-        background-size auto 110%
-        background-position 0 -50px
+        background url(../img/dome_transparent_iphone_compress.png)
+        background-size auto 80%
+        background-position top center
+        background-repeat no-repeat
         padding-top 40px
         .button.register
             margin-top 0px
             margin-bottom 15px
-        h2
+            &:first-child
+                margin-top 20px
             p
                 span
                     font-size 36px
